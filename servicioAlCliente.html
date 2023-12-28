@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicio al cliente</title>
+
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap copy.css">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="css/estiloGreatValue.css">
+</head>
+<body class="d-flex flex-column h-100">
+    <header>
+        <nav class="navbar navbar-expand-md bg-Blanco">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="imagenes/Logo vectorizado.svg" width="100" alt="logo">
+                </a>
+                <div class="text-center order-md-last iconos" id="inicio">
+                    <a href="registro.html"><i class="bi-person-circle"></i></a>
+                    <a href="pedidos.html"><i class="bi-dropbox"></i></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto ">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="/catalogox.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                DEPARTAMENTOS
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="catalogox.html#Higiene">Higiene y Belleza</a></li>
+                                <li><a class="dropdown-item" href="/catalogox.html#Alimentos">Alimentos</a></li>
+                                <li><a class="dropdown-item" href="/catalogox.html#Congelados">Congelados</a></li>
+                                <li><a class="dropdown-item" href="/catalogox.html#Reposteria">Repostería</a></li>
+                                <li><a class="dropdown-item" href="/catalogox.html#LimpiezayMascotas">Limpieza y Mascotas</a></li>
+                                <li><a class="dropdown-item" href="/catalogox.html#Vino">Vinos y Licores</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contacto.html">CONTACTO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicioAlCliente.html">SERVICIO AL CLIENTE</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="flex-shrink-0">
+        <div class="d-flex justify-content-center container-fluid">
+            <div class="contenedorAyuda row bg-BlancoN rounded text-center w-75">
+                <div class="row">
+                    <p>
+                        <h4 class="mensajeInicio" id="mensajeTexto">Hola en que puedo ayudarte</h4>
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-12 col-md-4 contenedorAyuda">
+                        <p>
+                            <a href="#" class="botonAyuda btn bg-BotonesAyuda botones-Ayuda" id="botonOpcionPedidos" onclick="FbotonOpcion1On()">Tengo dudas con mis pedidos</a>
+                        </p>
+                        <p>
+                            <a href="#" class="botonAyuda btn bg-BotonesAyuda botones-Ayuda" id="botonOpcionCuenta" onclick="FbotonOpcion2On()">Tengo duda con mi cuenta</a>
+                        </p>
+                        <p>
+                            <a href="#" class="botonAyuda btn bg-BotonesAyuda botones-Ayuda" id="botonOpcionProblemaWeb" onclick="FbotonOpcion3On()">Encontré un problema en la pagina</a>
+                        </p>
+                    </div>
+                    <div class="col-lg-8 col-12 col-md-8 contenedorChat bg-BlancoN rounded">
+                        <p id="texto-Ayuda" class="text-center">
+                            Aquí aparecerá la información que le brindamos a nuestros clientes.
+                        </p>
+                        <img src="/imagenes/IA-exprecion-feliz.png" alt="IA" class="imagenIATamaño" id="imgIA">
+                    </div>
+                </div>
+                <div class="row col-lg-12 col-12 col-md-12 contenedorAyuda">
+                    <div>
+                        <p class="text-center">Como fue su experiencia</p>
+                        <a href="#" class="btn bg-BotonesAyuda botones-Ayuda" id="botonA1" onclick="agradecimiento01()">Muy buena</a>
+                        <a href="#" class="btn bg-BotonesAyuda botones-Ayuda" id="botonA2" onclick="agradecimiento02()">Regular</a>
+                        <a href="#" class="btn bg-BotonesAyuda botones-Ayuda" id="botonA3" onclick="agradecimiento03()">Mala</a>
+                        <p class="text-center" id="mensajeAgradecimiento">...</p>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="container-fluid bg-AzulW FooterColor footer mt-auto">
+        <div class="row text-center">
+            <div class="col-12 col-md-6 col-lg-4 p-3">
+                <i class="bi bi-envelope"></i>
+                greatvalue@correo.com
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 p-3">
+                <i class="bi bi-telephone"></i>
+                (477) 153-22-59
+            </div>
+            <div class="col-12 col-md-12 col-lg-4 p-3">
+                REDES SOCIALES
+                <i class="bi-facebook"></i>
+                <i class="bi-whatsapp"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/servicioCliente.js"></script>
+    <script src="js/sesionCheck.js"></script>
+    <script src="js/logOut.js"></script>
+</body>
+</html>

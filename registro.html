@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- CSS Bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <!-- CSS Personalizado -->
+        <link rel="stylesheet" href="css/estiloGreatValue.css">
+
+    <title>Registro</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md bg-Blanco">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="imagenes/Logo vectorizado.svg" width="100" alt="logo">
+                </a>
+                <div class="text-center order-md-last iconos">
+                    <a href="registro.html"><i class="bi-person-circle"></i></a>
+                    <a href="pedidos.html"><i class="bi-dropbox"></i></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto ">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="/catalogox.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                DEPARTAMENTOS
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="catalogox.html#Higiene">Higiene y Belleza</a></li>
+                                <li><a class="dropdown-item" href="/catalogox.html#Alimentos">Alimentos</a></li>
+                                <li><a class="dropdown-item" href="/catalogox.html#Congelados">Congelados</a></li>
+                                <li><a class="dropdown-item" href="/catalogox.html#Reposteria">Repostería</a></li>
+                                <li><a class="dropdown-item" href="/catalogox.html#LimpiezayMascotas">Limpieza y Mascotas</a></li>
+                                <li><a class="dropdown-item" href="/catalogox.html#Vino">Vinos y Licores</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contacto.html">CONTACTO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicioAlCliente.html">SERVICIO AL CLIENTE</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container rounded bg-Blanco">
+            <form id="registro">
+                <h2>Registrar Usuario</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label>Nombre(s)</label>
+                        <div class="form-floating mb-3 mt-3">
+                            <input type="text" class="form-control" id="nombre" required>
+                            <label for="txtNombre">Nombre(s)</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label>Apellidos</label>
+                        <div class="form-floating mb-3 mt-3">
+                            <input type="text" class="form-control" id="apellido" required>
+                            <label for="txtApellidos">Apellidos</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label>Correo</label>
+                        <div class="form-floating mb-3 mt-3">
+                            <input type="text" class="form-control" id="correo" required>
+                            <label for="txtCorreo">Correo</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label>Usuario</label>
+                        <div class="form-floating mb-3 mt-3">
+                            <input type="text" class="form-control" id="usuario" required>
+                            <label for="txtUsuario">Usuario</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label>Contraseña</label>
+                        <div class="form-floating mb-3 mt-3">
+                            <input type="password" class="form-control" id="contraseña" required>
+                            <label for="txtContraseña" >Contraseña</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label>Confirmar Contraseña</label>
+                        <div class="form-floating mb-3 mt-3">
+                            <input type="password" class="form-control" id="ccontraseña" required>
+                            <label for="txtConfirmarContraseña">Confirmar Contraseña</label>
+                        </div>
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-success">Registrar</button>
+                    </div>
+                    <br>
+                    <div class="d-flex align-items-center justify-content-center mb-3">
+                        <a href="/inicioSesion.html">¿Ya tengo cuenta?</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="container-fluid bg-AzulW FooterColor" style="margin-top: 20px;">
+        <div class="row text-center Contenedor_Footer">
+            <div class="col-12 col-md-6 col-lg-4 p-3">
+                <i class="bi bi-envelope"></i>
+                greatvalue@correo.com
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 p-3">
+                <i class="bi bi-telephone"></i>
+                (477) 153-22-59
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 p-3">
+                REDES SOCIALES
+                <i class="bi-facebook"></i>
+                <i class="bi-whatsapp"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/registro.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
